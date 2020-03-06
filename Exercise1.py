@@ -3,6 +3,7 @@
 # the number is odd or even, print out an appropriate message to the user.
 
 # -------------- Code ----------------------------------------------------------
+
 # taking input as long as it is in digital form
 while True:
     # if input string is digit, convert it into intiger

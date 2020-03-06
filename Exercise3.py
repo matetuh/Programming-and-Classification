@@ -2,6 +2,8 @@
 # Write a function that computes cosine of the angle between two d-dimensional vectors.
 
 # -------------- Code  ---------------------------------------------------------
+
+# importing to project numpy library
 import numpy as np
 
 # filling vectors array with vector coordinates points
@@ -22,7 +24,6 @@ def CosOfAngle(d):
         # if not print an error
         except ValueError:
             print('That was no valid number. Try again...')
-    print(vectors)
     # dot product of two vectors
     dotPrd = np.dot(vectors[0], vectors[1])
     # vectors magnitude

@@ -4,7 +4,7 @@
 
 # -------------- Code  ---------------------------------------------------------
 
-# importing random library
+# importing random and statistics library
 import random as rnd
 import statistics as stc
 
