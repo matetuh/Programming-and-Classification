@@ -17,10 +17,13 @@ def CalcLetter():
     numberOfNumbers = 0
     # for loop for iterating throught the sentence
     for i in range(len(sentence)):
+        #checking if this is an letter; if yes addig 1 to numberOfLetters
         if(sentence[i].isalpha()):
             numberOfLetters += 1
+        #checking if this is an number; if yes addig 1 to numberOfNumbers
         elif(sentence[i].isdigit()):
             numberOfNumbers += 1
+            
     print(f'Number of letters in this sentence is: {numberOfLetters}')
     print(f'Number of nummbers in this sentence is: {numberOfNumbers}')
 
