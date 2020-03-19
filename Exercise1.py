@@ -19,7 +19,7 @@ print('The input number', val ,'is intiger:', isinstance(val, int))
 
 # checking if "val" is odd or even
 if ( val % 2 == 0 ):
-    print('The number', val ,'is: odd')
+    print('The number', val ,'is: even')
 else: 
-    print('The number', val ,'is: even') 
+    print('The number', val ,'is: odd') 
 

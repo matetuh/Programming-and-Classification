@@ -22,17 +22,13 @@ def maxStr():
         except:
             print('Error, something iss wrong.')
 
-    
+    # wypisz listę input_str
     print('Entered list: ', input_str)
-    # declaring and assign max_str to empty string
-    max_str = ''
-    # iterating throught the elements od input_str
-    for i in input_str:
-        # adding i-th string to max_string
-        max_str += i
-    
-    return max_str
-        
+    # przypisz maksymalną liczbę z (długość znaków każdego elementu listy input_str)
+    length = max(len(i) for i in input_str)
+    # wydrukuj ".." + każdy element listy input_str jeśli długość tego elementu jest równa wartości length 
+    print("Maximal length string: ", [i for i in input_str if len(i) == length])
 
-print('Output maximal string: ', maxStr())
+
+maxStr()
 
