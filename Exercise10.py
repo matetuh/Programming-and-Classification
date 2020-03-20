@@ -10,5 +10,25 @@ def binConv():
         except:
             print('Error, something is wrong.')
     # bin function which converts int numbers to binary repr
-    return bin(input_num)
-print(binConv())
+    #array of binary digits
+    binaryNumber = []
+    binaryNumber_rev = []
+    #iterator
+    i = 0
+    #while the number id grater than zero, do
+    while (input_num > 0):
+        # set i'th element of the array by modulo division (3 % 2 = 1; 6 % 2 = 0)
+        binaryNumber.append(input_num % 2)
+        # divide the number by two
+        input_num = int(input_num / 2)
+        # increase the iterator
+        i = i + 1
+
+    # so the binaryNumber is now reversed
+    # we must reverse it now
+    for k in range (i-1, -1, -1):
+        binaryNumber_rev.append(binaryNumber[k])   
+    print("binary repersentation", binaryNumber_rev) 
+
+
+binConv()
